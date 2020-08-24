@@ -1,0 +1,87 @@
+.jumbotronClass
+{
+    background-color: black!important; 
+    color: #C0C0C0;
+    margin: 250px;
+}
+
+.cardsClass
+{
+  margin:20px;
+}
+.textAlignCenter
+{
+    text-align:center;
+}
+.textColorWhite
+{
+  color: #C0C0C0;
+}
+
+.body
+{
+  background-color: black;
+  font-family: Alegreya;
+  color: #C0C0C0;
+}
+
+.Headings
+{
+  font-size: 45px!important;
+  margin-bottom: 30px;
+}
+
+.hr
+{
+  border: 1px solid #C0C0C0;
+}
+.servicesImage
+{
+  margin-bottom: 20px;
+}
+
+.cardBody
+{
+  background-color: black;
+  color: #C0C0C0;
+}
+
+.aboutContent
+{
+  font-size: 20px!important;
+}
+
+.cardTitle
+{
+  font-size: 25px!important;
+}
+
+.cardText
+{
+  font-size: 20px!important;
+}
+
+.servicesDesc
+{
+  font-size: 20px!important;
+}
+
+.jumbotronText
+{
+  font-size: 20px!important;
+}
+.downArrow
+{
+  background:transparent!important;
+}
+
+.margin
+{
+  margin: 200px;
+}
+
+.contactDetails
+{
+  text-decoration: none;
+  color: #C0C0C0;
+}
