@@ -2,7 +2,7 @@
 {
     background-color: black!important; 
     color: #C0C0C0;
-    margin: 250px;
+    margin: 260px;
 }
 
 .cardsClass
@@ -27,8 +27,8 @@
 
 .Headings
 {
-  font-size: 45px!important;
-  margin-bottom: 30px;
+  font-size: 35px!important;
+  /* margin-bottom: 30px; */
 }
 
 .hr
@@ -48,7 +48,7 @@
 
 .aboutContent
 {
-  font-size: 20px!important;
+  font-size: 18px!important;
 }
 
 .cardTitle
@@ -58,17 +58,17 @@
 
 .cardText
 {
-  font-size: 20px!important;
+  font-size: 18px!important;
 }
 
 .servicesDesc
 {
-  font-size: 20px!important;
+  font-size: 18px!important;
 }
 
 .jumbotronText
 {
-  font-size: 20px!important;
+  font-size: 18px!important;
 }
 .downArrow
 {
