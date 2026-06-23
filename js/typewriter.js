@@ -14,12 +14,24 @@
   }
 
   function stash(el) {
-    if (!el || el.dataset.twPrepared || el.closest('#hero')) return;
+    if (!el || el.dataset.twPrepared) return;
+
     el.dataset.twHtml = el.innerHTML;
     el.dataset.twText = el.textContent.trim();
     el.dataset.twPrepared = '1';
+
+    const ghost = document.createElement('span');
+    ghost.className = 'typewriter-ghost';
+    ghost.setAttribute('aria-hidden', 'true');
+    ghost.innerHTML = el.dataset.twHtml;
+
+    const live = document.createElement('span');
+    live.className = 'typewriter-live';
+
     el.textContent = '';
-    el.classList.add('typewriter-waiting');
+    el.classList.add('typewriter-shell', 'typewriter-waiting');
+    el.appendChild(ghost);
+    el.appendChild(live);
     el.setAttribute('aria-busy', 'true');
   }
 
@@ -31,6 +43,10 @@
     });
   }
 
+  function getLiveTarget(el) {
+    return el.querySelector('.typewriter-live') || el;
+  }
+
   function beginTyping(el) {
     el.classList.remove('typewriter-waiting');
     el.classList.add('typewriter-active');
@@ -39,7 +55,11 @@
   function finish(el) {
     if (!el || !el.dataset.twHtml) return;
     el.innerHTML = el.dataset.twHtml;
-    el.classList.remove('typewriter-active', 'typewriter-waiting');
+    el.classList.remove(
+      'typewriter-active',
+      'typewriter-waiting',
+      'typewriter-shell'
+    );
     el.classList.add('typewriter-done');
     el.removeAttribute('aria-busy');
   }
@@ -57,10 +77,11 @@
     beginTyping(el);
 
     const text = el.dataset.twText || '';
+    const live = getLiveTarget(el);
     const step = charDelay(text, baseDelay, fast);
 
     for (let i = 1; i <= text.length; i++) {
-      el.textContent = text.slice(0, i);
+      live.textContent = text.slice(0, i);
       await delay(step);
     }
     finish(el);
@@ -94,6 +115,7 @@
     if (!hero) return;
 
     const els = collectHero(hero);
+    els.forEach(stash);
     await typeSequence(els, 32, false);
 
     hero.querySelectorAll('.reveal-hero-delayed').forEach(function (el) {
