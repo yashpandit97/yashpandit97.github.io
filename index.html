@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Yash Pandit — Lead Frontend Engineer specializing in React, Angular, and AI-integrated enterprise applications." />
+  <meta name="theme-color" content="#0a0a0a" id="theme-color-meta" />
+  <title>Yash Pandit — Lead Frontend Engineer</title>
+  <script>
+    (function () {
+      if (localStorage.getItem('theme') === 'light') {
+        document.documentElement.setAttribute('data-theme', 'light');
+        document.getElementById('theme-color-meta').setAttribute('content', '#ffffff');
+      }
+    })();
+  </script>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/print.css" media="print" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Yash Pandit",
+    "jobTitle": "Lead Frontend Engineer",
+    "description": "Lead Frontend Engineer with 5+ years building scalable enterprise applications across React, Angular, Python FastAPI, and AI-driven systems.",
+    "email": "yashpandit343@gmail.com",
+    "telephone": "+91-8867642126",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bangalore",
+      "postalCode": "560100",
+      "addressCountry": "IN"
+    },
+    "sameAs": [
+      "https://github.com/yashpandit97",
+      "https://www.linkedin.com/in/yashpandit"
+    ],
+    "knowsAbout": [
+      "React",
+      "Angular",
+      "TypeScript",
+      "Micro Frontends",
+      "Python",
+      "FastAPI",
+      "LLM Integration",
+      "RAG"
+    ],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "NTT Data"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "KLS Gogte Institute of Technology"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation -->
+  <header class="site-header" id="site-header">
+    <nav class="nav-container" aria-label="Main navigation">
+      <a href="#hero" class="nav-logo">YP</a>
+      <div class="nav-right">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+          <li><a href="#work" class="nav-link" data-section="work">Work</a></li>
+          <li><a href="#architecture" class="nav-link" data-section="architecture">Architecture</a></li>
+          <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+          <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+          <li><a href="#leadership" class="nav-link" data-section="leadership">Leadership</a></li>
+          <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+        </ul>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light theme">
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </button>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero" class="hero">
+    <canvas id="particle-canvas" aria-hidden="true"></canvas>
+    <div class="hero-vignette" aria-hidden="true"></div>
+    <div class="hero-gradient" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="hero-badge reveal-hero" style="--delay: 0ms">
+        <span class="availability-pulse" aria-hidden="true"></span>
+        Immediate Joiner · Bangalore
+      </p>
+      <h1 class="hero-name typewriter">Yash Pandit</h1>
+      <p class="hero-tagline typewriter">
+        Lead Frontend Engineer · React &amp; Angular · AI-Integrated Products
+      </p>
+      <p class="hero-sub typewriter">
+        Building scalable enterprise UIs, leading agile teams, and shipping high-impact frontend architecture.
+      </p>
+      <div class="hero-cta reveal-hero-delayed">
+        <a href="#experience" class="btn btn-primary">View Experience</a>
+        <a href="assets/Yash_Pandit_Resume.pdf" class="btn btn-secondary" download="Yash_Pandit_Resume.pdf">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+          Download Resume
+        </a>
+        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+      </div>
+      <div class="hero-social reveal-hero-delayed">
+        <a href="https://github.com/yashpandit97" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/yashpandit" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="mailto:yashpandit343@gmail.com" aria-label="Email">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </a>
+      </div>
+      <a href="#metrics" class="scroll-hint reveal-hero-delayed" aria-label="Scroll to content">
+        <span class="scroll-hint-text">Scroll</span>
+        <span class="scroll-hint-line"></span>
+      </a>
+    </div>
+  </section>
+
+  <main id="main-content">
+
+    <!-- Impact Metrics -->
+    <section id="metrics" class="metrics-strip" aria-label="Impact metrics">
+      <div class="container">
+        <div class="metrics-grid">
+          <div class="metrics-item reveal">
+            <span class="metrics-value" data-count="5" data-suffix="+">5+</span>
+            <span class="metrics-label typewriter">Years Experience</span>
+          </div>
+          <div class="metrics-item reveal">
+            <span class="metrics-value" data-count="85" data-suffix="%">85%</span>
+            <span class="metrics-label typewriter">Faster Document Generation</span>
+          </div>
+          <div class="metrics-item reveal">
+            <span class="metrics-value" data-count="3">3</span>
+            <span class="metrics-label typewriter">Apps Migrated to Micro Frontends</span>
+          </div>
+          <div class="metrics-item reveal">
+            <span class="metrics-value" data-count="40" data-suffix="%">40%</span>
+            <span class="metrics-label typewriter">Reduction in Feature Dev Effort</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title reveal typewriter">About</h2>
+        <div class="about-card reveal">
+          <p class="about-text typewriter">
+            Full Stack Engineer with <strong>5+ years</strong> of experience building scalable enterprise applications across frontend, backend, and AI-driven systems. I specialize in <strong>Angular and React</strong> with a proven track record of optimizing performance, designing robust architectures, and delivering intelligent automation solutions.
+          </p>
+          <p class="about-text typewriter">
+            As a technical lead, I own architecture decisions, mentor developers, and drive cross-functional delivery. I have led micro frontend migrations, improved application responsiveness by <strong>30%</strong>, and reduced page load times by <strong>40%</strong>. On the backend and AI side, I work with <strong>Python FastAPI</strong>, LLM integration, and RAG pipelines to build production-grade intelligent features.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Work -->
+    <section id="work" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title reveal typewriter">Featured Work</h2>
+        <div class="work-grid">
+
+          <article class="work-card reveal">
+            <span class="work-company">NTT Data</span>
+            <h3 class="work-title typewriter">AI-Powered RFP Automation Platform</h3>
+            <div class="work-block">
+              <h4 class="work-label typewriter">Problem</h4>
+              <p class="typewriter">Manual RFP and proposal generation was slow and inconsistent when processing large document and spreadsheet datasets.</p>
+            </div>
+            <div class="work-block">
+              <h4 class="work-label typewriter">My Role</h4>
+              <p class="typewriter">Led full-stack development of an AI-powered automation platform using React, TypeScript, and Python FastAPI.</p>
+            </div>
+            <div class="work-tags">
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">TypeScript</span>
+              <span class="skill-tag">FastAPI</span>
+              <span class="skill-tag">LLMs</span>
+              <span class="skill-tag">RAG</span>
+              <span class="skill-tag">CSV/XLSX</span>
+            </div>
+            <div class="work-block">
+              <h4 class="work-label">Outcome</h4>
+              <p><strong>85% reduction</strong> in generation time (40 min → 5–7 min); improved proposal quality, content accuracy, and pipeline throughput at scale.</p>
+            </div>
+            <a href="#experience" class="work-link">View full experience →</a>
+          </article>
+
+          <article class="work-card reveal">
+            <span class="work-company">73 Strings</span>
+            <h3 class="work-title">Micro Frontend Migration</h3>
+            <div class="work-block">
+              <h4 class="work-label">Problem</h4>
+              <p>Three monolithic frontend applications blocked independent deployments, limited scalability, and slowed release cycles.</p>
+            </div>
+            <div class="work-block">
+              <h4 class="work-label">My Role</h4>
+              <p>Technical Lead owning architecture, organization-wide migration, and cross-team delivery alongside the CTO and founding team.</p>
+            </div>
+            <div class="work-tags">
+              <span class="skill-tag">Angular</span>
+              <span class="skill-tag">Micro Frontends</span>
+              <span class="skill-tag">Performance</span>
+            </div>
+            <div class="work-block">
+              <h4 class="work-label">Outcome</h4>
+              <p>Enabled independent deployments and faster releases; <strong>30%</strong> responsiveness gain, <strong>40%</strong> page-load reduction, and <strong>25%</strong> sprint velocity increase.</p>
+            </div>
+            <a href="#experience" class="work-link">View full experience →</a>
+          </article>
+
+          <article class="work-card reveal">
+            <span class="work-company">Cloudtara Technologies</span>
+            <h3 class="work-title">Shared Component Library</h3>
+            <div class="work-block">
+              <h4 class="work-label">Problem</h4>
+              <p>Repeated UI work across projects caused inconsistent user experiences and slowed feature delivery.</p>
+            </div>
+            <div class="work-block">
+              <h4 class="work-label">My Role</h4>
+              <p>Senior engineer designing a library of modular, reusable UI components and shared frontend utilities across projects.</p>
+            </div>
+            <div class="work-tags">
+              <span class="skill-tag">UI Components</span>
+              <span class="skill-tag">Frontend Architecture</span>
+              <span class="skill-tag">QA / DevOps</span>
+            </div>
+            <div class="work-block">
+              <h4 class="work-label">Outcome</h4>
+              <p><strong>40%</strong> reduction in feature development effort; <strong>35%</strong> fewer production issues; improved application consistency across projects.</p>
+            </div>
+            <a href="#experience" class="work-link">View full experience →</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Architecture & Approach -->
+    <section id="architecture" class="section">
+      <div class="container">
+        <h2 class="section-title reveal typewriter">Architecture &amp; Approach</h2>
+        <p class="section-intro reveal typewriter">System design patterns I have delivered in production — from frontend modularity to AI document pipelines.</p>
+
+        <h3 class="subsection-title reveal">Architecture Highlights</h3>
+        <div class="arch-grid reveal">
+          <article class="arch-card">
+            <div class="arch-diagram" aria-hidden="true">
+              <span class="arch-node">Shell App</span>
+              <span class="arch-arrow">↓</span>
+              <span class="arch-node-group">
+                <span class="arch-node">MFE A</span>
+                <span class="arch-node">MFE B</span>
+                <span class="arch-node">MFE C</span>
+              </span>
+            </div>
+            <h3>Micro Frontend Architecture</h3>
+            <p>Led migration of three monolithic Angular apps to independently deployable micro frontends — enabling faster release cycles, improved scalability, and enhanced developer productivity.</p>
+          </article>
+          <article class="arch-card">
+            <div class="arch-diagram" aria-hidden="true">
+              <span class="arch-node">React UI</span>
+              <span class="arch-arrow">↔</span>
+              <span class="arch-node">FastAPI</span>
+              <span class="arch-arrow">↔</span>
+              <span class="arch-node">Enterprise APIs</span>
+            </div>
+            <h3>REST API &amp; Integration Layer</h3>
+            <p>Architected scalable RESTful APIs and cross-platform integrations enabling seamless data exchange across multiple enterprise systems while reducing integration complexity.</p>
+          </article>
+          <article class="arch-card">
+            <div class="arch-diagram" aria-hidden="true">
+              <span class="arch-node">Documents</span>
+              <span class="arch-arrow">→</span>
+              <span class="arch-node">RAG + Chunking</span>
+              <span class="arch-arrow">→</span>
+              <span class="arch-node">LLM Agents</span>
+            </div>
+            <h3>AI RAG Document Pipeline</h3>
+            <p>Built end-to-end agentic workflows with LLMs, RAG pipelines, prompt engineering, and async orchestration — reducing document generation time by <strong>85%</strong>.</p>
+          </article>
+        </div>
+
+        <h3 class="subsection-title reveal">How I Work</h3>
+        <div class="process-grid reveal">
+          <article class="process-card">
+            <span class="process-step">01</span>
+            <h3>Discovery</h3>
+            <p>Requirements gathering with product, design, and business stakeholders to align on scope, constraints, and success metrics.</p>
+          </article>
+          <article class="process-card">
+            <span class="process-step">02</span>
+            <h3>Architecture</h3>
+            <p>Evaluate technical roadmaps, define system design, and make architectural decisions — partnering with leadership on long-term platform strategy.</p>
+          </article>
+          <article class="process-card">
+            <span class="process-step">03</span>
+            <h3>Build</h3>
+            <p>Hands-on implementation across React, Angular, and FastAPI — owning the full feature delivery lifecycle through production deployment.</p>
+          </article>
+          <article class="process-card">
+            <span class="process-step">04</span>
+            <h3>Review</h3>
+            <p>Rigorous code reviews, architectural guidance, and engineering best practices that improve code quality, maintainability, and team output.</p>
+          </article>
+          <article class="process-card">
+            <span class="process-step">05</span>
+            <h3>Ship</h3>
+            <p>Collaborate with QA and DevOps on release processes, test coverage, and deployment reliability — delivering client-facing modules ahead of schedule.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills (expanded) -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title reveal typewriter">Skills &amp; Tech Depth</h2>
+        <p class="section-intro reveal typewriter">Core technologies ranked by depth of production experience across enterprise projects.</p>
+
+        <div class="skill-depth-grid reveal">
+          <div class="skill-depth-item">
+            <div class="skill-depth-header">
+              <span class="skill-depth-name">React</span>
+              <span class="skill-depth-pct">5/10</span>
+            </div>
+            <div class="skill-depth-bar"><div class="skill-depth-fill" style="--level: 50%"></div></div>
+          </div>
+          <div class="skill-depth-item">
+            <div class="skill-depth-header">
+              <span class="skill-depth-name">Angular (2–17)</span>
+              <span class="skill-depth-pct">8/10</span>
+            </div>
+            <div class="skill-depth-bar"><div class="skill-depth-fill" style="--level: 80%"></div></div>
+          </div>
+          <div class="skill-depth-item">
+            <div class="skill-depth-header">
+              <span class="skill-depth-name">TypeScript</span>
+              <span class="skill-depth-pct">8/10</span>
+            </div>
+            <div class="skill-depth-bar"><div class="skill-depth-fill" style="--level: 80%"></div></div>
+          </div>
+          <div class="skill-depth-item">
+            <div class="skill-depth-header">
+              <span class="skill-depth-name">Micro Frontends</span>
+              <span class="skill-depth-pct">8/10</span>
+            </div>
+            <div class="skill-depth-bar"><div class="skill-depth-fill" style="--level: 80%"></div></div>
+          </div>
+          <div class="skill-depth-item">
+            <div class="skill-depth-header">
+              <span class="skill-depth-name">Python / FastAPI</span>
+              <span class="skill-depth-pct">5/10</span>
+            </div>
+            <div class="skill-depth-bar"><div class="skill-depth-fill" style="--level: 50%"></div></div>
+          </div>
+          <div class="skill-depth-item">
+            <div class="skill-depth-header">
+              <span class="skill-depth-name">LLM / RAG / Agents</span>
+              <span class="skill-depth-pct">7/10</span>
+            </div>
+            <div class="skill-depth-bar"><div class="skill-depth-fill" style="--level: 70%"></div></div>
+          </div>
+          <div class="skill-depth-item">
+            <div class="skill-depth-header">
+              <span class="skill-depth-name">REST API</span>
+              <span class="skill-depth-pct">6/10</span>
+            </div>
+            <div class="skill-depth-bar"><div class="skill-depth-fill" style="--level: 60%"></div></div>
+          </div>
+          <div class="skill-depth-item">
+            <div class="skill-depth-header">
+              <span class="skill-depth-name">Geospatial (Leaflet / ArcGIS)</span>
+              <span class="skill-depth-pct">6/10</span>
+            </div>
+            <div class="skill-depth-bar"><div class="skill-depth-fill" style="--level: 60%"></div></div>
+          </div>
+        </div>
+
+        <div class="skills-grid reveal">
+          <div class="skill-card">
+            <h3 class="skill-category typewriter">Frontend Libraries</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Tailwind CSS</span>
+              <span class="skill-tag">Angular Material</span>
+              <span class="skill-tag">Chakra UI</span>
+              <span class="skill-tag">Highcharts</span>
+              <span class="skill-tag">SyncFusion</span>
+              <span class="skill-tag">PrimeNG</span>
+              <span class="skill-tag">Pdftron</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h3 class="skill-category typewriter">Backend &amp; Data</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Parquet</span>
+              <span class="skill-tag">GeoJSON</span>
+              <span class="skill-tag">GPKG</span>
+              <span class="skill-tag">CSV / XLSX</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h3 class="skill-category typewriter">AI / LLM</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">LangGraph</span>
+              <span class="skill-tag">Embeddings</span>
+              <span class="skill-tag">Prompt Engineering</span>
+              <span class="skill-tag">Document AI</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="toolchain-block reveal">
+          <h3 class="skill-category">Toolchain</h3>
+          <div class="toolchain-wrap" aria-hidden="true">
+            <div class="toolchain-track">
+              <span>React</span><span>Angular</span><span>TypeScript</span><span>Python</span><span>FastAPI</span><span>Tailwind</span><span>Git</span><span>GitHub</span><span>VS Code</span><span>Cursor AI</span><span>LLMs</span><span>RAG</span><span>LangGraph</span><span>Leaflet</span><span>ArcGIS</span><span>REST APIs</span><span>Micro Frontends</span>
+              <span>React</span><span>Angular</span><span>TypeScript</span><span>Python</span><span>FastAPI</span><span>Tailwind</span><span>Git</span><span>GitHub</span><span>VS Code</span><span>Cursor AI</span><span>LLMs</span><span>RAG</span><span>LangGraph</span><span>Leaflet</span><span>ArcGIS</span><span>REST APIs</span><span>Micro Frontends</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 class="section-title reveal typewriter">Experience</h2>
+        <div class="timeline">
+
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Systems Integration Senior Specialist</h3>
+                  <p class="timeline-company">NTT Data</p>
+                </div>
+                <div class="timeline-meta">
+                  <span class="timeline-date">Oct 2025 – Present</span>
+                  <span class="timeline-location">Bengaluru</span>
+                </div>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Engineered and maintained enterprise-scale full-stack applications using <strong>React, TypeScript, and Python FastAPI</strong>, delivering high-performance solutions for mission-critical business workflows.</li>
+                <li>Architected and developed scalable <strong>RESTful APIs</strong> and cross-platform integrations, enabling seamless data exchange across multiple enterprise systems and reducing integration complexity.</li>
+                <li>Spearheaded the development of an <strong>AI-powered RFP automation platform</strong> leveraging <strong>LLMs, RAG pipelines</strong>, and end-to-end agentic workflows, significantly accelerating proposal generation and improving content quality.</li>
+                <li>Designed and delivered geospatial applications utilizing <strong>Leaflet, ArcGIS, GeoJSON, GPKG, and Parquet</strong> datasets, enabling large-scale spatial data visualization and analysis for business-critical use cases.</li>
+                <li>Enhanced AI pipeline efficiency through advanced <strong>prompt engineering</strong>, intelligent document chunking, and batch-processing strategies, enabling reliable processing of large <strong>CSV/XLSX</strong> datasets at scale.</li>
+                <li>Optimized document generation architecture through asynchronous processing, parallel execution, and workflow orchestration, reducing end-to-end generation time by over <strong>85%</strong> (40 minutes to 5–7 minutes) while improving system scalability and throughput.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Lead Software Engineer</h3>
+                  <p class="timeline-company">73 Strings</p>
+                </div>
+                <div class="timeline-meta">
+                  <span class="timeline-date">Jan 2024 – Oct 2025</span>
+                  <span class="timeline-location">Bengaluru</span>
+                </div>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Spearheaded the development of enterprise-scale <strong>Angular</strong> applications, implementing performance optimization strategies that improved application responsiveness by <strong>30%</strong> and reduced page load times by <strong>40%</strong>.</li>
+                <li>Owned the complete feature delivery lifecycle—from requirements gathering and architecture design to implementation and production deployment—while serving as <strong>Technical Lead</strong>, increasing team sprint velocity by <strong>25%</strong>.</li>
+                <li>Led an organization-wide migration of three monolithic frontend applications to a <strong>Micro Frontend architecture</strong>, enabling independent deployments, improved scalability, faster release cycles, and enhanced developer productivity.</li>
+                <li>Partnered closely with the <strong>CTO and founding team</strong> to define technical roadmaps, evaluate architectural decisions, and drive long-term platform modernization initiatives.</li>
+                <li>Established engineering best practices through rigorous code reviews, architectural guidance, and developer mentorship, significantly improving code quality, maintainability, and team productivity.</li>
+                <li>Collaborated with product, design, QA, and business stakeholders to successfully deliver high-impact client-facing modules ahead of schedule while maintaining quality and performance standards.</li>
+                <li>Designed and developed <strong>Python-based web scraping</strong> and workflow automation solutions that eliminated manual effort, accelerated data collection processes, and significantly improved operational efficiency.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Senior Software Engineer</h3>
+                  <p class="timeline-company">Cloudtara Technologies</p>
+                </div>
+                <div class="timeline-meta">
+                  <span class="timeline-date">Dec 2020 – Dec 2023</span>
+                  <span class="timeline-location">Bangalore</span>
+                </div>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Designed and developed a library of modular, reusable <strong>UI components</strong> and shared frontend utilities, reducing feature development effort by <strong>40%</strong> and improving application consistency across projects.</li>
+                <li>Partnered closely with <strong>QA and DevOps</strong> teams to strengthen release processes, improve test coverage, and enhance deployment reliability, resulting in a <strong>35% reduction</strong> in production issues.</li>
+                <li>Developed full-stack <strong>financial data visualization and analytics platforms</strong>, enabling more accurate business insights and improving analytical accuracy by <strong>20%</strong>.</li>
+                <li>Engineered <strong>Python-based data processing and automation pipelines</strong> that ingested Excel datasets, performed complex transformations, applied business rules, standardized data formats, executed advanced calculations, and generated validated output files while preserving source data integrity.</li>
+                <li>Automated previously manual data-cleaning and reporting workflows through scalable <strong>Python scripting</strong>, significantly reducing processing time, improving data quality, and minimizing operational effort.</li>
+                <li>Served as <strong>Scrum Proxy</strong>, facilitating sprint planning, backlog refinement, daily stand-ups, retrospectives, and client demonstrations, ensuring effective stakeholder communication and consistent delivery of business objectives.</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Leadership & Process -->
+    <section id="leadership" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title reveal typewriter">Leadership &amp; Process</h2>
+        <p class="section-intro reveal typewriter">How I lead teams, strengthen engineering culture, and drive consistent delivery across agile workflows.</p>
+        <div class="leadership-grid reveal">
+          <article class="leadership-card">
+            <span class="leadership-icon" aria-hidden="true">◆</span>
+            <h3>Technical Lead</h3>
+            <p>Owned the complete feature delivery lifecycle as Technical Lead at 73 Strings — increasing sprint velocity by <strong>25%</strong> while partnering with the CTO on platform modernization.</p>
+          </article>
+          <article class="leadership-card">
+            <span class="leadership-icon" aria-hidden="true">◆</span>
+            <h3>Code Reviews &amp; Mentorship</h3>
+            <p>Established engineering best practices through rigorous code reviews, architectural guidance, and developer mentorship — improving code quality, maintainability, and team productivity.</p>
+          </article>
+          <article class="leadership-card">
+            <span class="leadership-icon" aria-hidden="true">◆</span>
+            <h3>Scrum &amp; Agile Delivery</h3>
+            <p>Served as Scrum Proxy at Cloudtara — facilitating sprint planning, backlog refinement, daily stand-ups, retrospectives, and client demonstrations.</p>
+          </article>
+          <article class="leadership-card">
+            <span class="leadership-icon" aria-hidden="true">◆</span>
+            <h3>Cross-Functional Collaboration</h3>
+            <p>Collaborated with product, design, QA, DevOps, and business stakeholders to deliver high-impact modules ahead of schedule while maintaining quality standards.</p>
+          </article>
+          <article class="leadership-card">
+            <span class="leadership-icon" aria-hidden="true">◆</span>
+            <h3>Release &amp; Quality</h3>
+            <p>Partnered with QA and DevOps to strengthen release processes, improve test coverage, and enhance deployment reliability — achieving a <strong>35% reduction</strong> in production issues.</p>
+          </article>
+          <article class="leadership-card">
+            <span class="leadership-icon" aria-hidden="true">◆</span>
+            <h3>Architecture Ownership</h3>
+            <p>Defined technical roadmaps, evaluated architectural decisions, and drove organization-wide migrations alongside founding team leadership.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Performance Wins -->
+    <section id="performance" class="section">
+      <div class="container">
+        <h2 class="section-title reveal typewriter">Performance Wins</h2>
+        <p class="section-intro reveal typewriter">Measurable outcomes delivered across frontend optimization, AI pipelines, and engineering efficiency.</p>
+        <div class="perf-grid reveal">
+          <article class="perf-card">
+            <span class="perf-value">85%</span>
+            <h3>Document Generation</h3>
+            <p>Reduced end-to-end RFP document generation from 40 minutes to 5–7 minutes through async processing, parallel execution, and workflow orchestration.</p>
+          </article>
+          <article class="perf-card">
+            <span class="perf-value">40%</span>
+            <h3>Page Load Time</h3>
+            <p>Cut page load times through enterprise Angular performance optimization strategies at 73 Strings.</p>
+          </article>
+          <article class="perf-card">
+            <span class="perf-value">30%</span>
+            <h3>App Responsiveness</h3>
+            <p>Improved application responsiveness across enterprise-scale Angular applications via targeted frontend optimization.</p>
+          </article>
+          <article class="perf-card">
+            <span class="perf-value">40%</span>
+            <h3>Feature Dev Effort</h3>
+            <p>Reduced feature development effort with a modular, reusable UI component library and shared frontend utilities.</p>
+          </article>
+          <article class="perf-card">
+            <span class="perf-value">25%</span>
+            <h3>Sprint Velocity</h3>
+            <p>Increased team sprint velocity while serving as Technical Lead and owning end-to-end delivery.</p>
+          </article>
+          <article class="perf-card">
+            <span class="perf-value">35%</span>
+            <h3>Fewer Prod Issues</h3>
+            <p>Reduced production issues by strengthening release processes, test coverage, and deployment reliability with QA and DevOps.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Career Timeline -->
+    <section id="career-timeline" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title reveal typewriter">Career Timeline</h2>
+        <p class="section-intro reveal typewriter">5+ years of progressive growth from senior engineer to technical lead and enterprise specialist.</p>
+        <div class="career-track reveal">
+          <div class="career-line" aria-hidden="true"></div>
+          <article class="career-item">
+            <span class="career-year">2016</span>
+            <div class="career-dot"></div>
+            <h3>B.E. Information Science</h3>
+            <p>KLS Gogte Institute of Technology · Belgaum</p>
+            <span class="career-span">2016 – 2020</span>
+          </article>
+          <article class="career-item">
+            <span class="career-year">2020</span>
+            <div class="career-dot"></div>
+            <h3>Senior Software Engineer</h3>
+            <p>Cloudtara Technologies · Bangalore</p>
+            <span class="career-span">Dec 2020 – Dec 2023</span>
+          </article>
+          <article class="career-item">
+            <span class="career-year">2024</span>
+            <div class="career-dot"></div>
+            <h3>Lead Software Engineer</h3>
+            <p>73 Strings · Bengaluru</p>
+            <span class="career-span">Jan 2024 – Oct 2025</span>
+          </article>
+          <article class="career-item career-item-current">
+            <span class="career-year">2025</span>
+            <div class="career-dot"></div>
+            <h3>Systems Integration Senior Specialist</h3>
+            <p>NTT Data · Bengaluru</p>
+            <span class="career-span">Oct 2025 – Present</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section">
+      <div class="container">
+        <h2 class="section-title reveal typewriter">Education</h2>
+        <div class="edu-card reveal">
+          <div class="edu-content">
+            <h3 class="edu-degree">Bachelor of Engineering</h3>
+            <p class="edu-field">Information Science and Engineering</p>
+            <p class="edu-school">KLS Gogte Institute of Technology, Belgaum</p>
+          </div>
+          <span class="edu-year">2016 – 2020</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title reveal typewriter">Contact</h2>
+        <p class="contact-intro reveal typewriter">Open to new opportunities. Let's connect.</p>
+        <a href="assets/Yash_Pandit_Resume.pdf" class="resume-download-banner reveal" download="Yash_Pandit_Resume.pdf">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          <span>
+            <strong>Download Resume (PDF)</strong>
+            <small>Yash Pandit — Lead Frontend Engineer</small>
+          </span>
+          <svg class="resume-download-arrow" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+        </a>
+        <div class="contact-grid reveal">
+          <a href="mailto:yashpandit343@gmail.com" class="contact-card">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <span>yashpandit343@gmail.com</span>
+          </a>
+          <a href="tel:+918867642126" class="contact-card">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>+91 8867642126</span>
+          </a>
+          <div class="contact-card contact-card-static">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Bangalore – 560100</span>
+          </div>
+          <a href="https://github.com/yashpandit97" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+            <span>github.com/yashpandit97</span>
+          </a>
+          <a href="https://www.linkedin.com/in/yashpandit" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            <span>linkedin.com/in/yashpandit</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-cta">
+      <p class="typewriter">Ready to build something impactful together?</p>
+      <div class="footer-cta-actions">
+        <a href="assets/Yash_Pandit_Resume.pdf" class="btn btn-primary" download="Yash_Pandit_Resume.pdf">Download Resume</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Yash Pandit. Built with HTML5, CSS3, Vanilla JavaScript, Three.js, Tailwind CSS, Google Fonts (Inter &amp; Source Serif 4), SVG, JSON-LD &amp; GitHub Pages.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/typewriter.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
