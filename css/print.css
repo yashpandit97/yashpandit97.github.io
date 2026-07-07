@@ -180,7 +180,7 @@ a[href*="github.com"]::after {
 }
 
 .resume-download-banner::after {
-  content: " (assets/Yash_Pandit_Resume.pdf)";
+  content: " (assets/YASH_PANDIT_2026.pdf)";
   font-size: 9pt;
   color: #555;
 }

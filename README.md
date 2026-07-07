@@ -61,7 +61,7 @@ Add a `CNAME` file with your domain name, then configure DNS with your registrar
 ├── js/main.js
 ├── js/particles.js
 ├── assets/favicon.svg
-└── assets/Yash_Pandit_Resume.pdf
+└── assets/YASH_PANDIT_2026.pdf
 ```
 
 ## Notes
