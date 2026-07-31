@@ -660,9 +660,11 @@ button:focus-visible,
 .skills-grid .reveal:nth-child(2) { transition-delay: 80ms; }
 .skills-grid .reveal:nth-child(3) { transition-delay: 160ms; }
 .skills-grid .reveal:nth-child(4) { transition-delay: 240ms; }
+.skills-grid .reveal:nth-child(5) { transition-delay: 320ms; }
 
 .work-grid .reveal:nth-child(2) { transition-delay: 100ms; }
 .work-grid .reveal:nth-child(3) { transition-delay: 200ms; }
+.work-grid .reveal:nth-child(4) { transition-delay: 300ms; }
 
 .timeline-item.reveal:nth-child(2) { transition-delay: 100ms; }
 .timeline-item.reveal:nth-child(3) { transition-delay: 200ms; }
